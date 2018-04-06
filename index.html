@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>muziekstijlen</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+        <button class="tablink tablink1" onclick="openPage('70s', this, 'black')">70s</button>
+		<button class="tablink tablink2" onclick="openPage('EDM', this, 'black')" id="defaultOpen">EDM</button>
+		<button class="tablink tablink3" onclick="openPage('indie/alternatief', this, 'black')">indie/alternatief</button>
+		<button class="tablink tablink4" onclick="openPage('rap', this, 'black')">rap</button>
+        <button class="tablink tablink5" onclick="openPage('fotos', this, 'black')">fotoboek</button>
+		<div id="70s" class="tabcontent">
+			<h3>70s</h3>
+			<p>hier kan je een paar liedjes uit de jaren 70 luisteren:</p> <br />
+			<p>Another brick in the wall - Pink Floyd</p> 
+		  <audio controls="controls">
+		  <source src="AnotherBrickInTheWall.ogg" type="audio/ogg" />
+          <source src="AnotherBrickInTheWall.mp3" type="audio/mpeg" />
+          </audio>
+		  <p>Dream on - Aerosmith</p>
+		  <audio controls="controls">
+		  <source src="DreamOn.ogg" type="audio/ogg" />
+          <source src="DreamOn.mp3" type="audio/mpeg" />
+          </audio>
+		  <p>Jolene - Dolly Parton</p>
+		  <audio controls="controls">
+		  <source src="Jolene.ogg" type="audio/ogg" />
+          <source src="Jolene.mp3" type="audio/mpeg" />
+          </audio> <br /> <br />
+		  <button class="button1" onclick="rating()">klik hier voor advies</button>
+		<figure class="figure1">
+        <img src=".\POimages\70sfamilypicture.png">
+        <figcaption>alle artiesten uit de jaren 70 bij elkaar</figcaption>
+        </figure>
+		</div>
+
+		<div id="EDM" class="tabcontent">
+		  <h3>EDM</h3>
+		  <p>Hier kan je een paar EDM nummers luisteren:</p> <br />
+		  <p>Something just like this - Coldplay</p>
+		  <audio controls="controls">
+		  <source src="somethingjustlikethis.ogg" type="audio/ogg" />
+          <source src="somethingjustlikethis.mp3" type="audio/mpeg" />
+          </audio>
+		  <p>Without you - Avicii</p>
+		  <audio controls="controls">
+		  <source src="WithoutYou.ogg" type="audio/ogg" />
+          <source src="WithoutYou.mp3" type="audio/mpeg" />
+          </audio>
+		  <p>Don't let me down - The Chainsmokers</p>
+		  <audio controls="controls">
+		  <source src="DontLetMeDown.ogg" type="audio/ogg" />
+          <source src="DontLetMeDown.mp3" type="audio/mpeg" />
+          </audio><br /> <br />
+		  <button class="button1" onclick="ratingEDM()">klik hier voor advies</button>
+		  <figure class="figure1">
+		  <img src=".\POimages\EDMfamilypicture.png">
+        <figcaption>alle EDM artiesten bij elkaar</figcaption>
+        </figure>
+		</div>
+
+		<div id="indie/alternatief" class="tabcontent">
+		  <h3>indie/alternatief</h3>
+		  <p>Hier kan je nummers luisteren van de genre indie pop:</p> <br />
+		  <p>Miracle - The Score</p>
+		  <audio controls="controls">
+		  <source src="Miracle.ogg" type="audio/ogg" />
+          <source src="Miracle.mp3" type="audio/mpeg" />
+          </audio>
+		  <p>Car radio - Twenty One Pilots</p>
+		  <audio controls="controls">
+		  <source src="CarRadio.ogg" type="audio/ogg" />
+          <source src="CarRadio.mp3" type="audio/mpeg" />
+          </audio>
+		  <p>Suburban wonderland - The Heirs</p>
+		  <audio controls="controls">
+		  <source src="SuburbanWonderland.ogg" type="audio/ogg" />
+          <source src="SuburbanWonderland.mp3" type="audio/mpeg" />
+          </audio> <br /> <br />
+		  <button class="button1" onclick="ratingindiepop()">klik hier voor advies</button>
+		  <figure class="figure1">
+		  <img src=".\POimages\IndiePopfamilypicture.png">
+        <figcaption>alle indie en alternatief artiesten bij elkaar</figcaption>
+        </figure>
+		</div>
+
+		<div id="rap" class="tabcontent">
+		  <h3>rap</h3>
+		  <p>hier kan je een paar rapnummers luisteren:</p> <br />
+		  <p>Not Afraid - Eminem</p>
+		  <audio controls="controls">
+		  <source src="NotAfraid.ogg" type="audio/ogg" />
+          <source src="NotAfraid.mp3" type="audio/mpeg" />
+          </audio>
+		  <p>X gon' give it to ya - DMX</p>
+		  <audio controls="controls">
+		  <source src="GiveItToYa.ogg" type="audio/ogg" />
+          <source src="GiveItToYa.mp3" type="audio/mpeg" />
+          </audio>
+		  <p>Let you down - NF</p>
+		  <audio controls="controls">
+		  <source src="LetYouDown.ogg" type="audio/ogg" />
+          <source src="LetYouDown.mp3" type="audio/mpeg" />
+          </audio> <br /> <br />
+		  <button class="button1" onclick="ratingrap()">klik hier voor advies</button>
+		  <figure class="figure1">
+		  <img src=".\POimages\Rapfamilypicture.png">
+        <figcaption>alle rappers bij elkaar</figcaption>
+        </figure>
+		</div>
+		
+		<div id="fotos" class="tabcontent">
+		  <h3>fotoboek</h3>
+		  <p>hier staan alle originele fotos</p> <br />
+		  <table style="width:100%">
+		  <tr>
+		  <td>
+		  <figure>
+		  <img src="http://bit.ly/2jt4tz9" class ="fotoboek">
+        <figcaption>Pink Floyd</figcaption>
+        </figure>
+		  </td>
+		  <td>
+		  <figure>
+		  <img src="http://bit.ly/2ydZuUa" class ="fotoboek">
+        <figcaption>Aerosmith</figcaption>
+        </figure>
+		  </td>
+		  <td>
+          <figure>
+		  <img src="http://bit.ly/2yecKYU" class ="fotoboek">
+          <figcaption>Dolly Parton</figcaption>
+          </figure>
+		  </td>
+		  </tr>
+		  <tr>
+		  <td>
+		  <figure>
+		  <img src="https://www.straight.com/files/v3/images/17/09/coldplay_1.jpg" class ="fotoboek">
+        <figcaption>Coldplay</figcaption>
+        </figure>
+		  </td>
+		  <td>
+		  <figure>
+		  <img src="http://bit.ly/2nOD4sM" class ="fotoboek">
+        <figcaption>Avicii</figcaption>
+        </figure>
+		  </td>
+		  <td>
+          <figure>
+		  <img src="http://bit.ly/2AbCtD7" class ="fotoboek">
+          <figcaption>The Chainsmokers</figcaption>
+          </figure>
+		  </td>
+		  </tr>
+		  <tr>
+		  <td>
+		  <figure>
+		  <img src="http://bit.ly/2nMWQoE" class ="fotoboek">
+        <figcaption>The Score</figcaption>
+        </figure>
+		  </td>
+		  <td>
+		  <figure>
+		  <img src="http://on.fuse.tv/2ByF4eQ" class ="fotoboek">
+        <figcaption>Twenty One Pilots</figcaption>
+        </figure>
+		  </td>
+		  <td>
+          <figure>
+		  <img src="https://i.iheart.com/v3/re/new_assets/59ae35b604f2e3b3268f3203" class ="fotoboek">
+          <figcaption>The Heirs</figcaption>
+          </figure>
+		  </td>
+		  </tr>
+		  <tr>
+		  <td>
+		  <figure>
+		  <img src="https://www.puna.nl/wp-content/uploads/2016/10/Eminem-Featured-image.jpg" class ="fotoboek">
+        <figcaption>Eminem</figcaption>
+        </figure>
+		  </td>
+		  <td>
+		  <figure>
+		  <img src="http://riddim-donmagazine.com/wp-content/uploads/2016/02/DMX.jpg" class ="fotoboek">
+        <figcaption>DMX</figcaption>
+        </figure>
+		  </td>
+		  <td>
+          <figure>
+		  <img src="http://bit.ly/2BxW2Kd" class ="fotoboek">
+          <figcaption>NF</figcaption>
+          </figure>
+		  </td>
+		  </tr>
+		  </table>
+		</div>
+</body>
+</html>
